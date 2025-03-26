@@ -84,6 +84,7 @@ public class ProductoControllerTest {
         verify(productoService, times(1)).updateProducto(producto);
     }
 
+    //eliminar
     @Test
     void eliminarProducto_CuandoSeLlama_DevuelveMensajeDeEliminacion() {
         when(productoService.deleteProducto(1)).thenReturn("Producto eliminado !!1");
